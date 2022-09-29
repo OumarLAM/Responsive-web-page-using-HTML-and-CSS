@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    background: url("images/bg.jpg") center;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.main h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.element {
+    flex-basis: 19%;
+    background: rgb(255, 249, 249);
+    margin: 8px 0;
+    box-shadow: 0px 0px 5px 2px rgb(169, 22, 22);
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.element h3 {
+    padding: 10px 0;
+}
+
+.element p {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.element button {
+    background: rgb(58, 58, 239);
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.element:hover {
+    background: rgb(201, 50, 50);
+    transform: translate(-5px, -5px);
+}
+
+img {
+    border-radius: 50px;
+}
+
+.element:hover button {
+    background: rgb(255, 249, 249);
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .element {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px){
+    .container {
+        width: 100%;
+    }
+    .element {
+        flex: 1 0 20%;
+        margin: 10px;
+    }
+}
